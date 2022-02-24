@@ -1,0 +1,25 @@
+[{ "id":"1",
+  "color":"#C9EAE5",
+  "title":"MAN",
+  "desc":"That’s exactly what Kuerbis and his team at Nike did. After studying the previous models, the team decided",
+  "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTO1T8rH-Z7nb4V9ZJDbH4L2cYE5GgwcoTaw&usqp=CAU",  	
+  "categorie":"man"
+},
+{ "id":"2",
+  "color":"#CBE8F1",
+  "title":"Adidas",
+  "desc":"That’s exactly what Kuerbis and his team at Nike did. After studying the previous models, the team decided",
+  "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4OiphNwWfmhUZVojQFmZOuZKeoJObBhjvcw&usqp=CAU",
+  "categorie":"woman"
+  
+
+},
+{ "id":"3",
+  "color":"#B5C7DE",
+  "title":"Nike4f4",
+  "desc":"AD sits down with the man responsible for creating the 31st edition of the shoe that bears the name of the greatest basketball player of all",
+  "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH4EtABMXzMkMQJGj4Z9eLwdLel45siV056A&usqp=CAU",
+  "categorie":"kid"
+  
+}
+]
