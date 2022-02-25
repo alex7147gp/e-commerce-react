@@ -109,7 +109,7 @@ const   Silder = () => {
   useEffect(()=>{
     const getProduct = async()=>{
       try{
-         const res = await axios.get('http://localhost:5000/api/product');
+         const res = await axios.get('https://data-shop-jcc.herokuapp.com//api/product');
          setProduct(res.data); 
       }
       catch(err){
