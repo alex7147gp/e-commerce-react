@@ -259,9 +259,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                  <ProductAmountContainer>
-                   <AddIcon onClick={()=>handleClick('plus')}/>
+                   <AddIcon onClick={()=>handleClick('plus', item.quantity)}/>
                     <ProductAmount>{item.quantity}</ProductAmount>
-                   <RemoveIcon onClick={()=>handleClick('res')}/>
+                   <RemoveIcon onClick={()=>handleClick('res', item.quantity)}/>
                  </ProductAmountContainer>
                  <ProductPrice>
                      ${item.price}
