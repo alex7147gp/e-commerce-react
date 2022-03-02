@@ -192,6 +192,15 @@ const Cart = () => {
 
   const Total = total - estimateD();
 
+   
+   const handleClick = (add, product)=>{
+    if(add == 'res'){  
+      product > 1 &&  product - 1;
+    }
+    else{
+       product + 1;
+    }  
+   }
     const KEY = "pk_test_51KK8CTD9oGMKlIj9Y8bFKrRgqYA3862NfGLi64KJdhRmYwRX3zLgxqCTIbEqJ0avLgmM0GqVbkGXqsDbeT847lWs00Mu10Ehyk"
    
     const [stripeToken, setStripeToken] = useState(null);
@@ -250,9 +259,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                  <ProductAmountContainer>
-                   <AddIcon onClick={()=>{item.quantity + 1}}/>
+                   <AddIcon onClick={()=>handleClick('plus')}/>
                     <ProductAmount>{item.quantity}</ProductAmount>
-                   <RemoveIcon onClick={()=>{item.quantity > 1 &&  item.quantity - 1}}/>
+                   <RemoveIcon onClick={()=>handleClick('res')}/>
                  </ProductAmountContainer>
                  <ProductPrice>
                      ${item.price}
