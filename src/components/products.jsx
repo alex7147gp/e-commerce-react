@@ -38,8 +38,8 @@ const Products = ({cat, filters, sort}) =>{
     try{
       const res = await axios.get(
         cat 
-         ? `https://data-shop-jcc.herokuapp.com//api/product?category=${cat}`
-         : 'https://data-shop-jcc.herokuapp.com//api/product');
+         ? `https://data-shop-jcc.herokuapp.com/api/product?category=${cat}`
+         : 'https://data-shop-jcc.herokuapp.com/api/product');
       setProducts(res.data);
     }
     catch(err){
