@@ -193,7 +193,7 @@ const Cart = () => {
   const Total = total - estimateD();
 
    
-   const handleClick = (add, product)=>{
+   const handleClick = (add, product) =>{
     if(add === 'res'){  
       product > 1 &&  product - 1;
     }
