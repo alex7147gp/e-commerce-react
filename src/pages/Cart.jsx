@@ -195,7 +195,7 @@ const Cart = () => {
    
    const handleClick = (add, product) =>{
     if(add === 'res'){  
-      product > 1 &&  product - 1;
+     ? product > 1  : product - 1;
     }
     else{
       product + 1;
