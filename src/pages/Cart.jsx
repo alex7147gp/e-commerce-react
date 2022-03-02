@@ -192,16 +192,6 @@ const Cart = () => {
 
   const Total = total - estimateD();
 
-   
-   const [product, setProduct] = useState(0);
-   const handleClick = (add)=>{
-    if(add == 'plus'){  
-      setProduct(product < 99 ? product + 1 : 99);
-    }
-    else{
-      setProduct(product > 0 ? product - 1 : 0);
-    }  
-   }
     const KEY = "pk_test_51KK8CTD9oGMKlIj9Y8bFKrRgqYA3862NfGLi64KJdhRmYwRX3zLgxqCTIbEqJ0avLgmM0GqVbkGXqsDbeT847lWs00Mu10Ehyk"
    
     const [stripeToken, setStripeToken] = useState(null);
@@ -214,7 +204,7 @@ const Cart = () => {
    useEffect(()=>{
     const makeRequest = async () =>{
      try{
-      const res = await axios.post("http://localhost:5000/api/checkout/payment",
+      const res = await axios.post("https://data-shop-jcc.herokuapp.com/api/checkout/payment",
         { 
           tokenId: stripeToken.id,
           amount: Total * 100,       
@@ -260,9 +250,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                  <ProductAmountContainer>
-                   <AddIcon add = 'plus'onClick={()=> handleClick('plus')}/>
+                   <AddIcon onClick={()=>{item.quantity + 1}}/>
                     <ProductAmount>{item.quantity}</ProductAmount>
-                   <RemoveIcon add ='res'onClick={()=> handleClick('res')}/>
+                   <RemoveIcon onClick={()=>{item.quantity > 1 &&  item.quantity - 1}}/>
                  </ProductAmountContainer>
                  <ProductPrice>
                      ${item.price}
