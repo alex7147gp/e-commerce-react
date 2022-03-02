@@ -195,10 +195,10 @@ const Cart = () => {
    
    const handleClick = (add, product) =>{
     if(add === 'res'){  
-     ? product > 1  : product - 1;
+      product > 1  && (product - 1);
     }
     else{
-      product + 1;
+      (product + 1);
     }  
    }
     const KEY = "pk_test_51KK8CTD9oGMKlIj9Y8bFKrRgqYA3862NfGLi64KJdhRmYwRX3zLgxqCTIbEqJ0avLgmM0GqVbkGXqsDbeT847lWs00Mu10Ehyk"
