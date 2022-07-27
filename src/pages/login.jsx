@@ -76,7 +76,7 @@ const Login = () =>{
   
   const handleClick = async (username, password)=>{
     login(dispatch, {username, password})
-    error ? console.log('john') :  navigate('/')
+    error ? console.log('error in login') :  navigate('/')
   }    
 
 

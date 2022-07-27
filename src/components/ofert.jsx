@@ -14,7 +14,8 @@ const list = [{
 const Container = styled.div`
   width:100%;
   display:flex;
-  overflow:hidden;
+  overflow-x:hidden;
+
 `;
 const Wrapper = styled.div`
   display: flex;  

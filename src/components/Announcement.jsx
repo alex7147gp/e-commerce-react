@@ -10,10 +10,10 @@ const Contenedor = styled.div`
   justify-content:center;
   font-size:14px;
   font-weight:500;
-
+  position: relative;
 ` ;
 
-const Announcement = () => {
+const Announcement = ({menuOpen, setMenuOpen}) => {
 	return(
      <Contenedor>
        Super deal Free Shiping on Orders Over $50

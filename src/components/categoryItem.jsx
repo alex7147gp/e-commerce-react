@@ -8,6 +8,7 @@ const Container = styled.div`
  margin:3px;
  height: 70vh;
  position:relative;
+ overflow: hidden;
 `;
 const Image = styled.img`
  width:100%;

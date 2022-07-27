@@ -14,9 +14,12 @@ import {Mobil} from '../responsive'
 
 
 
-const Container = styled.div``;
-const Title = styled.h1` 
- margin: 20px;
+const Container = styled.div`
+ overflow-y: hidden; 
+`;
+const Title = styled.h1`
+ 
+ margin: 30px;
  ${Mobil({ padding : "0px", widtth : "60%"})}
 `;
 

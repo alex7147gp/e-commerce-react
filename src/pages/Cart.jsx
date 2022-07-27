@@ -258,11 +258,6 @@ const Cart = () => {
                 </Details>
               </ProductDetail>
               <PriceDetail>
-                 <ProductAmountContainer>
-                   <AddIcon />
-                    <ProductAmount>{item.quantity}</ProductAmount>
-                   <RemoveIcon />
-                 </ProductAmountContainer>
                  <ProductPrice>
                      ${item.price}
                  </ProductPrice>
@@ -317,26 +312,3 @@ const Cart = () => {
 }
 
 export default Cart
-
-// 
-            // <Product>
-            //   <ProductDetail>
-            //     <Image src={shoes[5].img}/>
-            //     <Details>
-            //       <ProductName><b>Porduct: </b> Nike407SR</ProductName>
-            //       <ProductId><b>ID: </b> 3628933223</ProductId>
-            //       <ProductColor color='black'/>
-            //       <ProductSize><b> Size: </b> 42</ProductSize>
-            //     </Details>
-            //   </ProductDetail>
-            //   <PriceDetail>
-            //      <ProductAmountContainer>
-            //        <AddIcon/>
-            //         <ProductAmount>2</ProductAmount>
-            //        <RemoveIcon/>
-            //      </ProductAmountContainer>
-            //      <ProductPrice>
-            //          20$
-            //      </ProductPrice>
-            //   </PriceDetail>
-            // </Product>

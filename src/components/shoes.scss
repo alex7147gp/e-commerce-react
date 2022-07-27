@@ -1,0 +1,61 @@
+
+.Section{
+  width: 90vw;
+  height: 500px;
+  position: absolute;
+  z-index: 3;
+  background: white;
+  left: 15px;
+  display: flex;
+  z-index: 3;
+    
+    .ConImg{
+      display: flex;
+      padding: 20px;
+      width: 25%;
+      align-items: center;
+      justify-content: center;
+    
+
+        .Img{
+           width: 300px;
+           height: 300px;
+        }
+
+    }
+
+    .Wrapper{
+      display: flex;
+      padding: 20px;
+      width: 75%;
+    
+        .List{
+          margin: 0; 
+          padding: 0; 
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+        
+
+          .Item{
+             width:50%;
+             margin-bottom: 15px;
+          }  
+
+        }
+
+    } 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

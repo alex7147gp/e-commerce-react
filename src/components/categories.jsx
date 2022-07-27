@@ -4,9 +4,10 @@ import CategoryItem from './categoryItem';
 import {Mobil} from '../responsive'
 
 const Container = styled.div`
-  display:flex;
+  display: flex;
   padding:20px;
   justify-content: space-between;
+  scroll-snap-align: start;
  ${Mobil({ padding : "0px", flexDirection : "column"})}
 
 `;

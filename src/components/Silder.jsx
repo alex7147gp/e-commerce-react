@@ -12,9 +12,9 @@ const Contenedor = styled.div`
   width:100%;
   height:100vh;
   display:flex;
-  background-color:;
+  background-color: white;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
  ${Mobil({ display : "none"})}
  ${Mobil({ height : "70vh"})}
 ` ;
@@ -27,7 +27,7 @@ const Arrow = styled.div`
   display: flex; 
   align-items:center;
   justify-content:center;
-  position: absolute;
+  position: absolute; 
   top: 0;
   bottom:0;
   left:${props => props.direction === 'left' && '10px'};
@@ -44,6 +44,7 @@ const Wrapper = styled.div`
   display: flex;  
   transition: all 1.5s ease;
   transform:translateX(${(props) => props.SliderIndex * -100 }vw);
+
  ${Mobil({ height : "70%"})}
 `;
 
@@ -53,7 +54,6 @@ const Slide = styled.div`
  display: flex;
  align-items: center;
  background-color:${props=>props.bg};
-
 `;
 const ImgContainer =styled.div`
   height:65%;
@@ -91,7 +91,7 @@ const Boton =styled.button`
 
 
 
-const   Silder = () => {
+const   Silder = ({menuOpen, setMenuOpen}) => {
   
   const [product, setProduct] = useState([]);
 
@@ -120,14 +120,15 @@ const   Silder = () => {
     getProduct();
   },[]) 
 
+
 	return(
      <Contenedor>
        <Arrow direction='left' onClick={()=> handleClick("left")}>
          <KeyboardDoubleArrowLeftIcon/>
        </Arrow>
-       <Wrapper  SliderIndex={sliderIndex}>
+       <Wrapper SliderIndex={sliderIndex}>
          {product.slice(0,8).map(slider =>
-          <Slide bg={slider.color} key={slider.id}>
+          <Slide  bg={slider.color == 'Black' ? '#1CE783' : slider.color} key={slider.id}>
             <ImgContainer>
               <Img  src={slider.img}/>
             </ImgContainer>

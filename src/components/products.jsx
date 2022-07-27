@@ -46,8 +46,8 @@ const Products = ({cat, filters, sort}) =>{
       console.log(err)}
   }
     getPreduct();
-  },[cat]);
   
+  },[cat]);
 
   useEffect( async () => {
     cat && 
@@ -60,6 +60,7 @@ const Products = ({cat, filters, sort}) =>{
       ) 
     )
   },[products, cat, filters]); 
+
 
 useEffect(()=>{
   if ((sort === 'newest')) {
