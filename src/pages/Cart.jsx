@@ -171,7 +171,7 @@ const Button = styled.button`
 const ContProduct = styled.div`
 `;
 
-const Cart = () => {
+const Cart = ({ sistem }) => {
   
   const cart = useSelector(state=>state.cart.products);
   
@@ -181,7 +181,7 @@ const Cart = () => {
 
   const shoes = Json;
 
-
+  
   const estimateC = 9.99 ; 
    
   const estimateD = () =>{
@@ -227,6 +227,8 @@ const Cart = () => {
     };
     stripeToken && Total >= 1 && makeRequest()
    },[stripeToken, Total, navigate])
+   
+   console.log(sistem)
 
    return(
       <Container>

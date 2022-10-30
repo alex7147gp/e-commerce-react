@@ -132,10 +132,15 @@ const Navbar = ({menuOpen, setMenuOpen, category, setCategory}) => {
   const quantity = useSelector(state=>state.cart.quantity);
   
   const handleClick = (type) => {
-     setCategory(type)
-     setMenuOpen(true)
+    console.log(category);  
+    setCategory(type)
+    setMenuOpen(true)
 
   }
+  
+  const locat = useLocation();
+  
+  console.log(locat.pathname);
 
   const user = useSelector((state)=> state.user.currentUser);
 
@@ -168,7 +173,7 @@ const Navbar = ({menuOpen, setMenuOpen, category, setCategory}) => {
               <WraperCount style={{display:`${user ? 'none' : 'flex'}`}}>
                 <MenuItem><a href="/Register" style={{textDecoration:'none', color:'black'}}>Register</a></MenuItem>
                 <MenuItem><a href="/Login" style={{textDecoration:'none', color:'black'}}>Sing In</a></MenuItem>
-              </WraperCount>
+              </WraperCount> 
               <Link to='/User'>
                 <Count style={{display:`${user ? 'flex' : 'none'}`}}>
                   <AccountCircleIcon/>
